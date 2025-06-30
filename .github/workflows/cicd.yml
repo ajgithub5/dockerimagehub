@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  built-and-test:
+  build-and-test:
     runs-on: ubuntu-latest
 
     steps:
@@ -28,7 +28,7 @@ jobs:
       run: |
         pytest
 
-  built-and-publish:
+  build-and-publish:
     needs: build-and-test
     runs-on: ubuntu-latest
 
